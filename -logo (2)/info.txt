@@ -1,0 +1,18 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Prata-Regular
+font link: https://fonts.google.com/specimen/Prata
+font author: Ivan Petrov
+font author site: https://www.behance.net/ivan-petrov
+
+
+icon designer: Rudolf Horaczek
+icon designer link: /RHoraczek
+        
+
+fontColor: {"hex":"#E87C4A"}
+bgColor: {"hex":"transparent"}
+iconColor: {"hex":"#E87C4A"}
+
+      
