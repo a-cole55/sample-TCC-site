@@ -1,7 +1,8 @@
+//Read More and Read Less Functionality
 function myFunction() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("myBtn");
+    const dots = document.getElementById("dots");
+    const moreText = document.getElementById("more");
+    const btnText = document.getElementById("myBtn");
   
     if (dots.style.display === "none") {
       dots.style.display = "inline";
@@ -12,66 +13,62 @@ function myFunction() {
       btnText.innerHTML = "Read Less";
       moreText.style.display = "inline";
     }
+};
+//navbar highlight
+const sections = document.querySelectorAll('section');
+const navLi = document.querySelectorAll('nav ul li');
+const rules = document.getElementsByTagName('section')[4].id;
+const pricing = document.getElementsByTagName('section')[3].id;
+
+window.addEventListener('scroll', ()=> {
+  let current = '';
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    if(scrollY >= (sectionTop - sectionHeight/5)){
+      current = section.getAttribute('id');
+    }
+    console.log(current)
+    console.log(rules)
+    console.log(pricing)
+  })
+  navLi.forEach( li => {
+    li.classList.remove('active');
+    if(li.classList.contains(current)){
+      li.classList.add('active')
+    }
+  })
+  //fade in rules section
+  if (current === rules){
+    const rulesText = document.getElementById('listOfRules')
+    rulesText.classList.add('fade-in')
+    rulesText.classList.remove('hide')
   }
-  $(window).on("scroll", function() {
+  //plot pricing animation
+  if (current === pricing){
+    const plotText = document.getElementById('plotPricing')
+    plotText.classList.add('fade-in')
+    plotText.classList.remove('hide')
+  }
+})
 
-    var currentPos = $(window).scrollTop();
+//gallery slideshow
+let slideIndex = 0;
+showSlides();
 
-    $('.sidenav li a').each(function() {
-        var sectionLink = $(this);
-        var section = $(sectionLink.attr('href'));
-        if(section.position().top <= currentPos && sectionLink.offset().top + section.height() >= currentPos) {
-            $('.sidenav li').removeClass('active');
-            sectionLink.parent().addClass('active');
-        }
-        else {
-            sectionLink.parent().removeClass('active');
-        }
-    });
-
-});
-
-
-  // $(window).on("scroll", function() {
-  //   var currentPos = $(window).scrollTop();
-  
-  //   $('.nav li a').each(function() {
-  //     var sectionLink = $(this);
-  //     // capture the height of the navbar
-  //     var navHeight = $('#nav-wrapper').outerHeight() + 1;
-  //     var section = $(sectionLink.attr('href'));
-  
-  //     // subtract the navbar height from the top of the section
-  //     if(section.position().top - navHeight  <= currentPos && sectionLink.offset().top + section.height()> currentPos) {
-  //       $('.nav li').removeClass('active');
-  //       sectionLink.parent().addClass('active');
-  //     } else {
-  //       sectionLink.parent().removeClass('active');
-  //     }
-  //   });        
-  // });    
-
-
-// //Highlight Current Section on nav
-// const current = 0;
-// for (var i = 0; i < document.links.length; i++) {
-//     if (document.links[i].href === document.URL) {
-//         current = i;
-//     }
-// }
-// document.links[current].className = 'current';
-
-
-// var url = "http://example.com/products.html".split("/"); //replace string with location.href
-// var navLinks = document.getElementsByTagName("nav")[0].getElementsByTagName("a");
-// //naturally you could use something other than the <nav> element
-// var i=0;
-// var currentPage = url[url.length - 1];
-// for(i;i<navLinks.length;i++){
-//   var lb = navLinks[i].href.split("/");
-//   if(lb[lb.length-1] == currentPage) {
-//    navLinks[i].className = "current";
-
-//   }
-//   }
-  
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dot = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dot.length; i++) {
+    dot[i].className = dot[i].className.replace(" active1", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dot[slideIndex-1].className += " active1";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}

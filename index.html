@@ -3,11 +3,10 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Trinity Community Cemetery</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link href="style.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Raleway:wght@100;200&family=Shadows+Into+Light&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
-        <link href="style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Handlee&family=M+PLUS+Rounded+1c:wght@700&family=Raleway:wght@100;200&display=swap" rel="stylesheet">
         <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
@@ -31,68 +30,283 @@
         
     </head>
     <body>
-        <div id="mySidenav" class="sidenav">
-            <img id="dove" src="homeLogo - Copy.png" alt="dove">
+        <section id="menuBG">
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+        <nav id="mySidenav" class="sidenav">
+            <a class="home" href="#"><img id="dove" src="homeLogo - Copy.png" alt="dove logo"></a>
+            <!-- <a id="home2" class="home" href="#"><img id="tccLogo" src="default1 - Copy.png" alt="text logo"></a> -->
             <ul>
-                <li><a id="tccLogo" href="#"><img src="default1 - Copy.png" alt="logo"></a></li>
-                <li><a class="menuLinks" href="#history">ABOUT</a></li>
-                <li><a class="menuLinks" href="#address">ADDRESS</a></li>
-                <li><a class="menuLinks" href="#">PLOT PRICING</a></li>
-                <li><a class="menuLinks" href="#">RULES AND BYLAWS</a></li>
-                <li><a class="menuLinks" href="#">COMMITTEE</a></li>
-                <li><a class="menuLinks" href="#">CONTACT</a></li>
+                <li class="history"><a class="history" href="#history">ABOUT</a></li>
+                <li class="address"><a class="address" href="#address">ADDRESS</a></li>
+                <li class="pricing"><a class="pricing" href="#pricing">PLOT PRICING</a></li>
+                <li class="rules"><a class="rules" href="#rules">RULES AND BYLAWS</a></li>
+                <li class="committee"><a class="committee" href="#committee">COMMITTEE</a></li>
+                <li class="contact"><a class="contact" href="#contact">CONTACT</a></li>
             </ul>
-            <!-- <a id="tccLogo" href="#"><img src="default1 - Copy.png" alt="logo"></a>
-            <a class="menuLinks" href="#history">ABOUT</a>
-            <a class="menuLinks" href="#address">ADDRESS</a>
-            <a class="menuLinks" href="#">PLOT PRICING</a>
-            <a class="menuLinks" href="#">RULES AND BYLAWS</a>
-            <a class="menuLinks" href="#">COMMITTEE</a>
-            <a class="menuLinks" href="#">CONTACT</a> -->
-          </div>
+          </nav>
 
           <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
           <div id="main">
               <!-- Home Page-->
-              <section id="header">
-                  <!-- <img id="logo" src="dove.png" alt="logo"> -->
-                  <!-- <h1>TRINITY</h1>
-                  <h2>COMMUNITY CEMETERY</h2> -->
+              <section id="home">
+                <img src="cover.png" alt="text logo">
+                  <!-- <h2>The Resting Place</h2>
+                  <h1>for Loved Ones</h1> -->
                   <!-- <img id="cemetery" src="homepage.jpg" alt="cemetery pic"> -->
                 </section>
                 <!--History of Cemetery-->
                 <section id="history">
-                    <section class="heading">
-                        <h3>- Our Story -</h3>
-                        <!-- <h2>Trinity Community Cemetery</h2> -->
-                    </section>
-                    <section id="about">
-                        <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt enim corrupti nulla dolorem dignissimos magni eligendi 
-                            perspiciatis consequuntur maiores exercitationem laborum nostrum, dolor velit fugiat amet recusandae sunt iusto vel. Ullam labore, deleniti 
-                            minima suscipit mollitia dolorum, eum repellat id quo architecto numquam quas incidunt? Aut sed dicta, quod optio cum perferendis, est porro 
-                            qui eveniet laudantium molestiae quo. Cum deserunt quibusdam laudantium ullam consequatur reiciendis a fugiat, sint provident pariatur quod 
-                            atque facilis delectus culpa voluptates. Quos vel molestias molestiae ea porro saepe quibusdam voluptatem, recusandae temporibus suscipit 
-                            consectetur?<span id="dots">...</span></p><p><span id="more">Asperiores, hic totam! Fuga autem molestiae dolor, aliquam asperiores ullam dignissimos, expedita quam saepe, sint iusto? Eum 
-                            labore iusto natus tempore at doloremque, odio delectus in voluptatum reiciendis minus laudantium sit voluptate placeat ipsum quo. Obcaecati 
-                            ipsa vitae fuga officia, ipsum maxime consectetur, amet eum voluptatem aliquid voluptatibus? Repudiandae, iusto facere? Ipsum odit itaque esse 
-                            iusto quisquam quasi odio autem at doloribus, quo dicta aut corporis libero? Quasi deserunt commodi excepturi earum pariatur dicta assumenda 
-                            accusantium expedita placeat laboriosam repudiandae corrupti, soluta maiores quibusdam. Ipsa reprehenderit, omnis dicta, nostrum sunt odit 
-                            voluptate autem totam vero laborum consequuntur repudiandae impedit nam quia dolores. Amet harum suscipit ea tempore aliquid pariatur tenetur!</span></p>
-                        <button type="button" onclick="myFunction()" id="myBtn" class="readmore">Read More</button>
-                    </section>
+                    <h3>- About -</h3>
+                    <!-- <h2>Trinity Community Cemetery</h2> -->
+                    <p class="about">
+                        The Trinity Community Cemetery Association (TCCA) was established in 1963 with the purpose of providing an opportunity for persons
+                        who have loved ones buried in the Trinity Community Cemetery to: <br>
+                        &bull; Preserve the memory of our loved ones. <br>
+                        &bull; Make contributions for perpetual care or/ up-keep of the grounds and surroundings.<br>
+                        &bull; Effectively operate the organization.<br>
+                        Membership is open to any willing and interested families and/or family members in Trinity and vicinity who have people buried
+                        in the Trinity Cemetery or who plans to bury people in the Trinity Community Cemetery.
+                        <span id="dots">...</span></p><p class="about"><span id="more">
+                        The TCCA was originally organized by Trinity community leaders:
+                        Rev. A.E. Baines, Mr. O.T. Ligon, Mrs. Hattie M. Baker and Mr. Loyd Rawls
+                        who came together with the support of Trinity's 13 black churches to form the formerly known Trinity Cemetery Committee.
+                        The original objectives of the committee was to: buy land, fence in all (3) cemeteries, purchase a flag pole, and build a small maintenance house.<br><br>
+                        <strong>
+                            1963 Trinity Cemetery Committee: <br>
+                        </strong>
+                        Rev. A. E. Baines- Supervisor<br>
+                        Mr. C.L. Jones- President<br>
+                        Mr. Willie Tillis- Vice President<br>
+                        Mr. Loyd Rawls- Superintendent<br>
+                        Mr. O.T. Ligons- Maintenance Manager<br>
+                        Mr. Leon Butler- Assistant Maintenance Manager<br>
+                        Rev. James Walker- Caretaker<br>
+                        Mrs. Penola Cunningham- Secretary<br>
+                        Mrs. Deleta Curtis- Treasurer<br>
+                        Mrs. Hattie M. Baker- Publicity Chairman<br>
+                        <br>
+                        <strong>
+                            The Original 13 Black Churches were:<br>
+                        </strong>
+                        Lone Star M.B.C<br>
+                        Bowen Pilgrim M.B.C<br>
+                        Campbell Memorial C.O.G.I.C<br>
+                        Harris Chapel C.M.E. Church<br>
+                        Trinity Chapel A.M.E. Church<br>
+                        Church of God in Christ<br>
+                        Mt. Sinai M. B. Church<br>
+                        Church of Christ<br>
+                        Mt. Sinai Primitive B. Church<br>
+                        Westside Church of God in Christ<br>
+                        Clegg Chapel M.B. Church<br>
+                        Mary Chapel M.B. Church<br>
+                        Bible Way Baptist Church<br><br>
+                        From 1942-1954, a plot at the Trinity Community Cemetery cost $2. Between 1954-1969, a plot cost $4. From 1969-1981, a plot cost $10 and January 
+                        1981, plot costs increased to $25.<br>
+
+                        To view current plot prices, visit <a href=#pricing>here</a>.)<br>
+                        To view today's Trinity Community Cemetery Association, visit <a href=#committee>here</a>.)
+                        </span></p>
+                    <button type="button" onclick="myFunction()" id="myBtn" class="readmore">Read More</button>
                 </section>
                 <!--Address-->
                 <section id="address">
-                    <section class="heading">
-                        <h3>Address</h3>
-                        <!-- <h2>700 S MLK Jr Street<br>
-                        Trinity, TX 75862</h2> -->
-                    </section>
-                    <section id="map">
-                        <div class="mapouter"><div class="gmap_canvas"><iframe width="800" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=S%20MLK%20JR%20Street/Fairdale%20Trinity%20Tx%2075862&t=k&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:350px;width:800px;}</style><a href="https://www.embedgooglemap.net">embed google maps website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:350px;width:800px;}</style></div></div>
-                        <!-- <div class="mapouter"><div class="gmap_canvas"><iframe width="750" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=s%20mlk%20jr%20st/fairdale%20street%20trinity%20tx&t=k&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:750px;}</style><a href="https://www.embedgooglemap.net">google maps html</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:750px;}</style></div></div> -->
+                    <div class="mapouter"><div class="gmap_canvas"><iframe width="800" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=S%20MLK%20JR%20Street/Fairdale%20Trinity%20Tx%2075862&t=k&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:350px;width:600px;}</style><a href="https://www.embedgooglemap.net">embed google maps website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:350px;width:600px;}</style></div></div>
+                    <!-- <div class="mapouter1 hide"><div class="gmap_canvas"><iframe width="450" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=S%20MLK%20JR%20Street/Fairdale%20Trinity%20Tx%2075862&t=k&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:300px;width:450px;}</style><a href="https://www.embedgooglemap.net">embed google maps website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:450px;}</style></div></div> -->
+                    
+                    <h3>Address</h3>
+                </section>
+                <section id="pricing">
+                    <div id="pricingHeading">
+                        <h3> Plot Pricing</h3>
+                        <h2 id="plotPricing" class="hide">$700 per plot</h2>
+                    </div>
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                          <!-- <div class="numbertext">1 / 3</div> -->
+                          <img src="644179434.jpg" style="width:100%">
+                          <!-- <div class="text">$700 per plot</div> -->
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          <!-- <div class="numbertext">2 / 3</div> -->
+                          <img src="644179434.jpg" style="width:100%">
+                          <!-- <div class="text">For more info,</div> -->
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          <!-- <div class="numbertext">3 / 3</div> -->
+                          <img src="644179434.jpg" style="width:100%">
+                          <!-- <div class="text">Contact Mr.Rector at (936)594-0000</div> -->
+                        </div>
+                        <br>
+                        
+                        <div style="text-align:center">
+                          <span class="dot"></span> 
+                          <span class="dot"></span> 
+                          <span class="dot"></span> 
+                        </div>
+                        <div class="pricingInfo">
+                            <span> For more info, contact Mr. Rector at (936)594-0000</span>
+                        </div>
+                    </div>
+                </section>
+                <section id="rules">
+                        <h3>Rules and Bylaws</h3>
+                        <ol id="listOfRules" class="hide">
+                            <li class="fade-in">All grading, landscaping, and improvements of any kind, and all care on plots shall be done, and all trees and shrubs and herbage of any kind
+                                shall be planted, trimmed, cut or removed and all openings and closings of plots, and all interments, disinterment and removals shall be made only by the TCCA
+                                unless by special permit from the TCCA in writing.
+                            </li>
+                            <li class="fade-in">The Trinity Community Cemetery Association (TCCA) reserves the right to remove all floral designs, flowers, weeds, trees,
+                                shrubs, and herbage of any kind, from the cemetery as soon as, in judgment of the TCCA, they become unsightly, dangerous, detrimental,
+                                or diseased, or when they do not conform to the standards maintained by the rest of the cemeteries.</li>
+                            <li class="fade-in">The TCCA shall not be held liable for floral pieces, baskets, or frames in which or to which such floral pieces are attached,
+                                beyond the acceptance of such floral pieces for funeral servce held in cemetery They shall not be liable for lost, misplaced, or broken flower vases.</li>
+                            <li class="fade-in">The TCCA shall not be responsible for frozen plants or herbage of any kind, or for plantings damaged by the elements, thieves, vandals,
+                                or by causes beyond its control.
+                            </li>
+                            <li class="fade-in">The TCCA reserves the right to prevent the removal of any flowers, floral designs, trees, shrubs, or plants, or herbage, of any kind unless
+                                the TCCA gives written consent.</li>
+                            <li class="fade-in">The following items are strictly prohibitted, and if so placed, the TCCA reserves the right to remove:<br>
+                                a.) The placing of boxes, shells, toys, metal designs, ornaments, chairs.<br>
+                                b.) Glass, wood, or iron cases and similar articles.<br>
+                                c.) Shrubs on lots without monuments. <br>
+                                d.) Marble chips around monuments or markers.<br>
+                                e.) Window boxes, pots, glass jars, etc., except for one week before and after Memorial Day.</li>
+                            <li class="fade-in">All fittings, adornments, urns, inscriptions, and arrangements of crypts or niches shall be, and are hereby declared to be, subject to
+                                the approval and control of, and acceptance or rejection by the TCCA.</li>
+                            <li class="fade-in">As a special mark of respect for those that have served our Country, the American flag shall be displayed only on the grave of those 
+                                persons who have honorably served in the armed forces of the United States of America.
+                            </li>
+                            <li class="fade-in">Artificial flowers must be removed and renewed within one (1) month and fresh flowers must be removed and renewed within one (1) week.</li>
+                        </ul>
+                </section>
+                <section id="committee">
+                    <h3>Meet the Committee</h3>
+                    <section class="three">
+                        <section class="team">
+                            <img src="IMG_0913.JPEG" alt="staff image"> -->
+                            <section class="nameBox">
+                                <span class="name">Jimmie Rector</span>
+                                <span>President</span>   
+                            </section>
+                        </section>
+                        <section class="team">
+                            <img src="20151123_182354.JPG" alt="staff image">
+                            <section class="nameBox">
+                                <span class="name">Chris Dennis</span>
+                            <span>Superintendent</span>
+                            </section>
+                        </section>
+                        <section class="team">
+                            <img src="IMG_7047.JPEG" alt="staff image">
+                            <section class="nameBox">
+                                <span class="name">Vera Rector</span>
+                                <span>Public Relations</span>
+                            </section>
+                        </section>
+                        <section class="team">
+                            <img src="20170806_132257.JPG" alt="staff image">
+                            <section class="nameBox">
+                                <span class="name">Sharon Dennis</span>
+                                <span>Secretary</span>
+                            </section>
+                        </section>
+                        <section class="team">
+                                <section class="blankBox">
+                                    <span class="notPictured">Not Pictured</span>
+                                </section>
+                                <section class="nameBox">
+                                    <span class="name">Jackie Goodall</span>
+                                    <span>Business Manager</span> 
+                                </section>
+                        </section>
+                        <section class="team">
+                            <section class="blankBox">
+                                <span class="notPictured">Not Pictured</span>
+                            </section>
+                            <section class="nameBox">
+                                <span class="name">Michelle Kizzee</span>
+                                <span>Treasurer</span>
+                            </section>
+                        </section>
                     </section>
                 </section>
+                <section id="contact">
+                    <h3>Contact Us</h3>
+                    <div class="row">
+                        <div class="form">
+                            <!-- Contact Form -->
+                                <section>
+                                    <form method="post" action="#">
+                                        <input type="text" name="name" id="contact-name" placeholder="Name" />
+                                        <input type="text" name="email" id="contact-email" placeholder="Email" />
+                                            <!-- </div> -->
+                                            <div class="col-12">
+                                                <textarea name="message" id="contact-message" placeholder="Message" rows="4"></textarea>
+                                            </div>
+                                            <div class="col-12">
+                                                <ul class="actions">
+                                                    <li><input type="submit" class="style1" value="Send" /></li>
+                                                    <li><input type="reset" class="style2" value="Reset" /></li>
+                                                </ul>
+                                            </div>
+                                    </form>
+                                </section>
+
+                        </div>
+                        <div class="contactInfo">
+                            <!-- Contact -->
+                            <div class="contactBox">
+                                <section>
+                                    <img src="address_white_321974.png" alt="address icon">
+                                    <h4>Address</h4>
+                                    <p>
+                                        Untitled Corp<br />
+                                        1234 Somewhere Rd<br />
+                                        Trinity, TX 75862
+                                    </p>
+                                </section>
+                            </div>
+                            <!-- <div class="contactBox">
+                                <section>
+                                    <h3 class="icon solid fa-comment">Social</h3>
+                                    <p>
+                                        <a href="#">@untitled-corp</a><br />
+                                        <a href="#">linkedin.com/untitled</a><br />
+                                        <a href="#">facebook.com/untitled</a>
+                                    </p>
+                                </section>
+                            </div> -->
+                            <div class="contactBox">
+                                <section>
+                                    <img src="email.png" alt="email icon">
+                                    <h4>Email</h4>
+                                    <p>
+                                        <a href="mailto:sdennis14@gmail.com">info@untitled.tld</a>
+                                    </p>
+                                </section>
+                            </div>
+                            <div class="contactBox">
+                                <section>
+                                    <img src="phone.png" alt="phone icon">
+                                    <h4>Phone</h4>
+                                    <p>
+                                        (000) 555-0000
+                                    </p>
+                                </section>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <footer>
+                    <span id="copyright">Copyright &copy 2022. acole designs.</span>
+                </footer>
           </div>
           <script src="TCC.js"></script>
     </body>
