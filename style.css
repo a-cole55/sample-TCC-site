@@ -664,13 +664,17 @@ footer{
     width:100%;
     padding:2% 5% 4% 10%;
   }
+  #rules > h3{
+    margin-bottom:5%;
+    width:100%;
+  }
   ol{
     display:contents;
     width:80%;
     font-size:0.75rem;
     line-height: 1.4em;
     letter-spacing: 0.1em;
-    margin: 3% 10% 5% 10%;
+    margin: 10% 10% 5% 10%;
     opacity:0.9;
   }
   /*Committee Section */
@@ -816,7 +820,7 @@ footer{
   font-family:Tahoma, sans-serif;
 }
 .contactBox p > a{
-  color:#367588;
+  color:white;
   font-weight: bold;
 }
 .contactBox img{
