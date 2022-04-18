@@ -72,3 +72,19 @@ function showSlides() {
   dot[slideIndex-1].className += " active1";
   setTimeout(showSlides, 5000); // Change image every 2 seconds
 }
+
+document.querySelector('#menuBG').addEventListener('click', myFunction)
+document.querySelector('#mySidenav').addEventListener('click', close)
+//Nav Bar for Mobile
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  var x = document.getElementById("mySidenav");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+function close(){
+  document.getElementById("mySidenav").style.display = "none";
+  }

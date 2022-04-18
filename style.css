@@ -15,6 +15,9 @@ ul{
   padding:0;
   margin-top:10%;
 }
+#myTopnav{
+  display: none;
+}
 /* The sidebar menu */
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
@@ -65,26 +68,19 @@ ul{
   margin-left: 300px; /* Same as the width of the sidebar */
   padding: 0;
 }
-
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
 #home{
   display:flex;
   justify-content: center;
   align-items: center;
-  /* background: url("sunny.jpg") no-repeat top left fixed; */
   background-color:#F3F6F9;
   background-size: cover;
   height: 60em;
   margin:0;
   opacity:0.9;
 }
-/* #homeLogo{
+#homeLogo{
   display:none;
-} */
+}
 #logo{
   width:6%;
   border-radius: 5em;
@@ -523,10 +519,6 @@ footer{
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
 
 @media all and (max-width: 480px) {
   body{
@@ -534,51 +526,70 @@ footer{
     height:auto;
     overflow-x: hidden;
   }
-  #menuBG{
-    /* position:relative;
-    top:5em;
-    z-index: 1; */
-    background-color:#F3F6F9;
-    margin: 0;
+  #mySidenav {
+    width:170px;
+    display:none;
+
   }
-  .navMenu{
-    width: 35px;
-    height: 5px;
-    background-color:#A66D00;
-    margin: 6px 0;
-  }
-  .sidenav {
-    width:0;
-    display: none;
-  }
-  .sidenav a {
-    font-size: 2em;
-  }
-  .home{
-    height:50px;
-  }
-  #dove{
-    width:2.75em;
-  }
-  #main {
-    padding: 0;
-    display:flex;
-    flex-flow: column;
-    width: 100%;
-    margin:0;
-    height:50em;
-  }
+  /*menu icon */
+    #menuBG{
+      background-color:#F3F6F9;
+      margin: 0;
+    }
+    .navMenu{
+      width: 35px;
+      height: 5px;
+      background-color:#A66D00;
+      margin: 6px 0;
+    }
+    /*style nav bar*/
+    .sidenav {
+      width:170px; /* Set the width of the sidebar */
+      height:36em;
+      position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+      z-index: 1; /* Stay on top */
+      top: 3.2em; /* Stay at the top */
+      left: 0;
+      overflow-x: hidden; /* Disable horizontal scroll */
+      letter-spacing: 0.1em;
+      opacity: .9;
+    }
+    /* The navigation menu links */
+    .sidenav a {
+      padding: 2% 5% 2% 2%;
+      margin:0 1em;
+      text-decoration: none;
+      font-size:1.5em;
+      color: white;
+      display: block;
+    }
+    .home1{
+      height:30px;
+      margin:5% 0;
+    }
+    .home{
+      height:50px;
+    }
+    #dove{
+      width:2.75em;
+    }
+    #main {
+      padding: 0;
+      display:flex;
+      flex-flow: column;
+      width: 100%;
+      margin:0;
+      height:50em;
+    }
   #home{
     height:50em;
   }
-#homeLogo{
-    width:100%;
+  #homeLogo{
+    display:block;
+    height:40em;
   }
   video{
     display:none;
-  }
-  #home{
-    height:50em;
   }
   h3{
     font-size: 2em;
