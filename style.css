@@ -545,7 +545,7 @@ footer{
     /*style nav bar*/
     .sidenav {
       width:170px; /* Set the width of the sidebar */
-      height:36em;
+      height:46em;
       position: fixed; /* Fixed Sidebar (stay in place on scroll) */
       z-index: 1; /* Stay on top */
       top: 3.2em; /* Stay at the top */
@@ -556,22 +556,22 @@ footer{
     }
     /* The navigation menu links */
     .sidenav a {
-      padding: 2% 5% 2% 2%;
+      padding: 2% 5% 7% 2%;
       margin:0 1em;
       text-decoration: none;
-      font-size:1.5em;
+      font-size:1.75em;
       color: white;
       display: block;
     }
     .home1{
-      height:30px;
+      height:40px;
       margin:5% 0;
     }
     .home{
       height:50px;
     }
     #dove{
-      width:2.75em;
+      width:4em;
     }
     #main {
       padding: 0;
