@@ -73,11 +73,11 @@ function showSlides() {
   setTimeout(showSlides, 5000); // Change image every 2 seconds
 }
 
-document.querySelector('#menuBG').addEventListener('click', myFunction)
+document.querySelector('#menuBG').addEventListener('click', myNav)
 document.querySelector('#mySidenav').addEventListener('click', close)
 //Nav Bar for Mobile
 /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function myFunction() {
+function myNav() {
   var x = document.getElementById("mySidenav");
   if (x.style.display === "block") {
     x.style.display = "none";
