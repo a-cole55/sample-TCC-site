@@ -25,12 +25,13 @@ window.addEventListener('scroll', ()=> {
   sections.forEach(section => {
     const sectionTop = section.offsetTop;
     const sectionHeight = section.clientHeight;
+    console.log((sectionTop-sectionHeight/10), scrollY)
     if(scrollY >= (sectionTop - sectionHeight/5)){
       current = section.getAttribute('id');
     }
     console.log(current)
-    console.log(rules)
-    console.log(pricing)
+    // console.log(rules)
+    // console.log(pricing)
   })
   navLi.forEach( li => {
     li.classList.remove('active');
@@ -77,14 +78,14 @@ document.querySelector('#menuBG').addEventListener('click', myNav)
 document.querySelector('#mySidenav').addEventListener('click', close)
 //Nav Bar for Mobile
 /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function myNav() {
-  var x = document.getElementById("mySidenav");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-function close(){
-  document.getElementById("mySidenav").style.display = "none";
-  }
+// function myNav() {
+//   var x = document.getElementById("mySidenav");
+//   if (x.style.display === "block") {
+//     x.style.display = "none";
+//   } else {
+//     x.style.display = "block";
+//   }
+// }
+// function close(){
+//   document.getElementById("mySidenav").style.display = "none";
+//   }
