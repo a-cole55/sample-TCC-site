@@ -54,28 +54,47 @@ window.addEventListener('scroll', ()=> {
 })
 
 //gallery slideshow
-let slideIndex = 0;
-showSlides();
+// let slideIndex = 0;
+// showSlides();
 
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dot = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dot.length; i++) {
-    dot[i].className = dot[i].className.replace(" active1", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dot[slideIndex-1].className += " active1";
-  setTimeout(showSlides, 5000); // Change image every 2 seconds
-}
+// function showSlides() {
+//   let i;
+//   let slides = document.getElementsByClassName("mySlides");
+//   let dot = document.getElementsByClassName("dot");
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";  
+//   }
+//   slideIndex++;
+//   if (slideIndex > slides.length) {slideIndex = 1}    
+//   for (i = 0; i < dot.length; i++) {
+//     dot[i].className = dot[i].className.replace(" active1", "");
+//   }
+//   slides[slideIndex-1].style.display = "block";  
+//   dot[slideIndex-1].className += " active1";
+//   setTimeout(showSlides, 5000); // Change image every 2 seconds
+// }
 
-document.querySelector('#menuBG').addEventListener('click', myNav)
-document.querySelector('#mySidenav').addEventListener('click', close)
+//rules&bylaws modal
+const overlay = document.querySelector("#overlayRules");
+document.querySelector("#show-modal-btn").addEventListener("click", () => {
+  overlay.style.display = "block";
+});
+document.querySelector("#close-modal-btn").addEventListener("click", () => {
+  overlay.style.display = "none";
+})
+
+// plot modal
+const overlay1 = document.querySelector("#overlayPricing");
+document.querySelector("#show-pricing-modal").addEventListener("click", () => {
+  overlay1.style.display = "block";
+});
+document.querySelector("#close-pricing-modal").addEventListener("click", () => {
+  overlay1.style.display = "none";
+})
+
+
+// document.querySelector('#menuBG').addEventListener('click', myNav)
+// document.querySelector('#mySidenav').addEventListener('click', close)
 //Nav Bar for Mobile
 /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
 // function myNav() {
