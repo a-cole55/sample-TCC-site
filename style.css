@@ -485,7 +485,7 @@ ol{
   width: 95%;
   align-items: center;
   justify-content: space-evenly;
-  margin:-3% 0 4% 0;
+  margin:-3% 0 2% 0;
 }
 #committeeHeading{
   margin:2% 0;
@@ -566,54 +566,44 @@ ol{
 .blankBox > span{
   color:#472f17;
 }
-#contact{
-  background-color:#A66D00;
-  color:white;
-}
-
-#contact > h3{
-  color:white;
-}
-/* #contact > h4{
-  font-size:5rem;
-}
-#contact > li{
-  list-style-type:none;
-}
 /* Row */
 #contact{
   padding-bottom: 1%;
+  background-color: #F3F6F9;
 }
 .row {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   box-sizing: border-box;
   align-items: center;
   justify-content: stretch;
   width:90%;
   opacity: 0.9;
+  color:#A66D00;
 }
 h5{
   font-size: 1.75rem;
-  color:#F3F6F9;
+  color:#A66D00;
   margin-bottom: 2%;
 }
 .form{
   width: 45%;
   margin: 5% 5% -3% 5%;
   display: inline-block;
+  background-color: #F3F6F9;
 }
 form {
   width:100%;
   margin:0;
-  /* opacity:0.95; */
+  background-color: #F3F6F9;
+  opacity:0.8;
 }
 form input{
   width:47%;
   margin-bottom: 0.5%;
   height:2.5em;
   font-family:'Handlee', sans-serif;
-  border-radius: 0.5em;
   border-color:#C0BBB7;
   border-width: 3px;
   font-size:1.15rem;
@@ -623,7 +613,6 @@ textarea{
   height:10em;
   font-family:'Handlee', sans-serif;
   color:black;
-  border-radius: 0.5em;
   border-color:#C0BBB7;
   border-width: 3px;
   font-size: 1.15rem;
@@ -652,22 +641,25 @@ textarea{
 .contactInfo{
   width:35%;
   display:inline-block;
-  margin: 3% 5% -3% 0;
+  margin: 0 0 -3% 0;
+  /* animation:slide 6s infinite; */
+  overflow: hidden;
 }
 .contactBox{
   margin-bottom:5%;
   height:100%;
+  color:#A66D00;
 }
 .contactBox h4{
   font-size:1.5rem;
   display: inline;
-  color:white;
+  color: #A66D00;
 }
 .contactBox p{
   font-size:1rem;
-  border-bottom: 2px solid #F3F6F9;
+  border-bottom: 2px solid #0B5351;
   padding:3% 0 5% 0;
-  color:white;
+  color:#092327;
 }
 .contactBox p > a{
   color:#0B5351;
@@ -689,8 +681,8 @@ textarea{
   transform: scale(1.25, 1.25);
 }
 footer{
-  background-color:#A66D00;
-  color:#F3F6F9;
+  background-color:#F3F6F9;
+  color:#A66D00;
   display:flex;
   flex-direction: column;
   justify-content: center;
