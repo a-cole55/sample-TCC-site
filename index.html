@@ -32,22 +32,24 @@
     </head>
     <body>
 
+        <div id="mySidenav" class="sidenav">
+            <ul>
+                <li class="home"><a class="home" href="#">HOME</a></li>
+                <li class="history moreInfo"><a class="history" href="#history">ABOUT</a></li>
+                <li class="address"><a class="address" href="#address">ADDRESS</a></li>
+                <li class="pricing"><a class="pricing" href="#pricing">PRICING AND RULES</a></li>
+                <li class="committee"><a class="committee" href="#committee">COMMITTEE</a></li>
+                <li class="contact"><a class="contact" href="#contact">CONTACT</a></li>
+            </ul>
+            <img id="dove" src="tcclogo.png" alt="dove logo">
+        </div>
+
         <section id="menuBG">
             <div class="navMenu"></div>
             <div class="navMenu"></div>
             <div class="navMenu"></div>
+            <span id="menu">MENU</span>
         </section>
-        <nav id="mySidenav" class="sidenav">
-            <a class="home1" href="#"><img id="dove" src="tcclogo.png" alt="dove logo"></a>
-            <ul>
-                <li class="history moreInfo"><a class="history" href="#history">ABOUT</a></li>
-                <li class="address"><a class="address" href="#address">ADDRESS</a></li>
-                <li class="pricing"><a class="pricing" href="#pricing">PRICING AND RULES</a></li>
-                <!-- <li class="rules"><a class="rules" href="#rules">RULES AND BYLAWS</a></li> -->
-                <li class="committee"><a class="committee" href="#committee">COMMITTEE</a></li>
-                <li class="contact"><a class="contact" href="#contact">CONTACT</a></li>
-            </ul>
-          </nav>
 
           <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
           <div id="main">
@@ -117,7 +119,7 @@
                 <section id="history">
                     <span>---<h3 id="aboutHeading">Our Story</h3>---</span>
                     <section id="moreInfo">
-                        <video width="520" height="320" controls muted>
+                        <video width="520" height="330" controls muted>
                             <source src="images/IMG_1942.MP4" type="video/mp4">
                             <source src="images/IMG_1942.MP4" type="video/ogg">
                             Your browser does not support the video tag.
@@ -183,10 +185,6 @@
                     </div>
                 </div>
 
-                <!-- <section id="rules">
-                    <h3>Rules and Bylaws</h3>
-                    <button id="show-modal-btn">More Info</button>
-            </section> -->
                 <section id="committee">
                     <span>---<h3 id="committeeHeading">Meet the Committee</h3>---</span>
                     <div class="three">
@@ -220,7 +218,7 @@
                         </div>
                         <div class="team pop-out">
                                 <section class="blankBox">
-                                    <!-- <span class="notPictured">Not Pictured</span> -->
+                                    <span class="notPictured" id="notPictured">Not Pictured</span>
                                 </section>
                                 <section class="nameBox">
                                     <span class="name">Jackie Goodall</span>
@@ -229,23 +227,23 @@
                         </div>
                         <div class="team pop-out">
                             <section class="blankBox">
-                                <!-- <span class="notPictured">Not Pictured</span> -->
+                                <span class="notPictured" id="notPictured">Not Pictured</span>
                             </section>
                             <section class="nameBox">
                                 <span class="name">Michelle Kizzee</span>
                                 <span>Treasurer-Secretary</span>
                             </section>
                         </div>
-                        <!-- <span class="notPictured">Not Pictured:</span>
-                        <p class="notPictured">Jackie Goodall-Caretaker || Michelle Kizzee Treasurer-Secretary</p> -->
-                        </div>
+                    </div>
                 </section>
                 <section id="contact">
                     <div class="row">
                         <div class="form">
                             <!-- Contact Form -->
+                            <span id="contactSpan">
+                                ---<h5 id="contactHeading">Contact Us</h5>---
+                            </span>
                                 <section>
-                                    <h5>Contact Us</h5>
                                     <form method="post" action="#">
                                         <input type="text" name="name" id="contact-name" placeholder="Name" />
                                         <input type="text" name="email" id="contact-email" placeholder="Email" />

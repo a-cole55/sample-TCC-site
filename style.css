@@ -8,63 +8,90 @@ body{
   margin: 0;
   font-family: 'Raleway', sans-serif;
   letter-spacing: 0.1em;
-  background-color: #F3F6F9;
+  background-color:rgba(0,0,0,0.5);
   opacity:.8;
 }
 ul{
   padding:0;
   margin-top:10%;
 }
-#myTopnav{
-  display: none;
+#menuBG{
+  position:fixed;
+  z-index: 1;
+  background-color: #0B5351;
+  width:60px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
-/* The sidebar menu */
+.home1{
+  height:100px;
+  margin:0 0 0 0;
+}
+#dove{
+  width:18em;
+  margin: 25% 0 0 12%;
+  border-radius: 50em;
+  opacity: 0.9;
+}
+.navMenu{
+  width: 50px;
+  height: 4px;
+  background-color:white;
+  margin: 3px 0;
+}
+#menu{
+  font-size: 1rem;
+  color:white;
+}
+/* The side navigation menu */
 .sidenav {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width:300px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color:#0B5351;
+  background-color: #0B5351; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 0;
-  font-family: 'Raleway', sans-serif;
-  letter-spacing: 0.1em;
-  /* opacity: .9; */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
-/* The navigation menu links */
+
 .sidenav a {
-  padding: 5% 5% 5% 2%;
+  padding: 4% 5% 2% 2%;
   margin:0 1em;
   text-decoration: none;
   font-size:3em;
   color: white;
   display: block;
-}
-.home1{
-  height:100px;
-  margin:5% 0 10% 0;
+  transition: 0.3s;
+  letter-spacing: 0.05em;
+
 }
 
-.sidenav a:nth-child(2){
-  padding:0 0 20% 0;
-}
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color:#092327;
+  color:#A66D00;
 }
-.sidenav li{
-  list-style-type: none;
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
 }
-#dove{
-  width:5.5em;
-  margin: 2% 0 2% 8%;
-  border-radius: 50em;
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
+
 /* Style page content */
 #main {
-  margin-left: 300px; /* Same as the width of the sidebar */
   padding: 0;;
 }
 #home{
@@ -72,13 +99,13 @@ ul{
   flex-direction: column;
   justify-content: center;
   align-items:center;
-  background-color:#0B5351;
+  background-color:rgba(0,0,0,0.4);
   height: 72em;
   margin:0;
-  opacity:1;
-  background: url(images/IMG_1941.JPEG) no-repeat fixed;
+  background: url(images/DSC_0054-copy.JPG) no-repeat fixed;
   background-size:cover;
-  background-position: top 40% center;
+  background-position: center;
+  /* background-position: left 10% top 60%; */
 }
 #mainLogo{
   font-size: 8em;
@@ -89,7 +116,7 @@ ul{
   letter-spacing: 0.1em;
   margin:0;
   overflow: hidden;
-  animation:appear 4s;
+  animation:appear 6s;
 }
 @keyframes appear{
   0%{opacity: 0;}
@@ -98,15 +125,16 @@ ul{
   100%{opacity: 0;}
 }
 #mainLogo::first-letter{
-  color:#A66D00;
+  color:#0B5351;
 }
 #subLogo{
-  animation:reveal 4s;
+  animation:reveal 6s;
   width:100%;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  margin-bottom: 5%;
 }
 
 #mainLogo2{
@@ -161,14 +189,15 @@ h2{
 }
 #history{
   /* opacity:.8; */
-  padding:0 5%;
+  padding:0 12% 0 15%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }
 #aboutHeading{
-  margin: 7% 0 2% 0;
+  margin: 5% 0 2% 0;
   color:#A66D00;
   font-size:2rem;
   text-shadow:none;
@@ -178,7 +207,7 @@ h2{
 }
 span{
   font-size:2rem;
-  margin: 6% 0 3% 0;
+  margin: 4% 0 1% 0;
 }
 #history img{
   width:50em;
@@ -196,6 +225,15 @@ span{
   font-size: 1.1rem;
   text-align:left;
   line-height: 1.5em;
+  margin:2% 0 0 0;
+  color:#092327;
+  font-weight: bold;
+}
+.about > span{
+  width:100%;
+  font-size: 1.1rem;
+  text-align:left;
+  line-height: 1.5em;
   margin:1% 0 0 0;
   color:#092327;
   font-weight: bold;
@@ -205,6 +243,7 @@ span{
 }
 #more {
   display: none;
+  transition: 1s; 
 }
 
 button{
@@ -257,7 +296,7 @@ button:hover{
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height:59em;
+  height:61em;
   margin-bottom: -14em;
 }
 .linkOut{
@@ -268,7 +307,7 @@ button:hover{
   margin:0;
 }
 .linkOut img{
-  max-width:407px;
+  max-width:506px;
   height:450px;
   margin:0;
   
@@ -322,7 +361,7 @@ button:hover{
   font-size:2.5rem;
 }
 .buttons{
-  width:6em;
+  width:7em;
   background-color:#F3F6F9;
   color:#A66D00;
   height:2.2em;
@@ -474,15 +513,15 @@ ol{
   }
 }
 /*Committee Section */
-/* #committee{
-  position: absolute;
-  bottom:7;
-} */
+#committee{
+  background-color: white;
+  box-shadow: #A66D00 2px 2px 5px;
+}
 .three{
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 95%;
+  width: 90%;
   align-items: center;
   justify-content: space-evenly;
   margin:-3% 0 2% 0;
@@ -490,31 +529,28 @@ ol{
 #committeeHeading{
   margin:2% 0;
   color:#A66D00;
-  font-size:2.5rem;
+  font-size:2rem;
   text-shadow:none;
 }
 #committee > span{
   font-size:2rem;
-  margin: 4% 0 0 0;
+  margin: 2% 0 1% 0;
 }
 .team{
-  width:15%;
-  margin:-1% 0 0 0;
+  width:16%;
+  margin:0;
   padding:0;
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* position: relative; */
-  /* bottom:6em; */
 }
 .team img{
-  height:24em;
-  width:18em;
+  height:28em;
+  width:22em;
   margin:0;
   padding: 0;
   box-shadow: #C0BBB7 1px 2px 4px;
-  /* border-radius: 350px; */
 }
 .team:first-child{
   margin-bottom:0;
@@ -544,32 +580,47 @@ ol{
   font-size:1rem;
   margin:0;
   font-weight: bold;
-  /* opacity:.95; */
-  /* font-family:'M PLUS Rounded 1c', sans-serif; */
 }
 .notPictured{
   font-size: 1.25rem;
   margin:0;
+  color: white;
+}
+#notPictured{
+  color:white;
 }
 .blankBox{
-  height:24em;
-  width:18em;
+  height:28em;
+  width:22em;
   margin:0;
   padding: 0;
   /* box-shadow: #C0BBB7 1px 2px 4px; */
   background-color:#0B5351;
   display: flex;
+  flex-direction: column;
   justify-content:center;
-  align-items: flex-start;
+  align-items: center;
   color:#F3F6F9;
-}
-.blankBox > span{
-  color:#472f17;
+  box-shadow: #C0BBB7 1px 2px 4px;
 }
 /* Row */
 #contact{
-  padding-bottom: 1%;
-  background-color: #F3F6F9;
+  padding:0 5%;
+  background-color: white;
+}
+#contactHeading{
+  margin:1% 0;
+  color:#A66D00;
+  font-size:2rem;
+  text-shadow:none;
+}
+#contactHeading::first-letter{
+  color:#0B5351;
+}
+#contactSpan{
+  font-size:2rem;
+  margin: 0 0 5% 0;
+  color:#0B5351
 }
 .row {
   display: flex;
@@ -579,24 +630,19 @@ ol{
   align-items: center;
   justify-content: stretch;
   width:90%;
-  opacity: 0.9;
+  /* opacity: 0.9; */
   color:#A66D00;
-}
-h5{
-  font-size: 1.75rem;
-  color:#A66D00;
-  margin-bottom: 2%;
 }
 .form{
   width: 45%;
   margin: 5% 5% -3% 5%;
   display: inline-block;
-  background-color: #F3F6F9;
+  background-color: white;
 }
 form {
   width:100%;
   margin:0;
-  background-color: #F3F6F9;
+  background-color:white;
   opacity:0.8;
 }
 form input{
@@ -604,8 +650,8 @@ form input{
   margin-bottom: 0.5%;
   height:2.5em;
   font-family:'Handlee', sans-serif;
-  border-color:#C0BBB7;
-  border-width: 3px;
+  border-color:#A66D00;
+  border-width: 2px;
   font-size:1.15rem;
 }
 textarea{
@@ -613,8 +659,8 @@ textarea{
   height:10em;
   font-family:'Handlee', sans-serif;
   color:black;
-  border-color:#C0BBB7;
-  border-width: 3px;
+  border-color:#A66D00;
+  border-width: 2px;
   font-size: 1.15rem;
   margin-bottom:0;
 }
@@ -626,7 +672,7 @@ textarea{
 .form li input{
   width:20%;
   margin:0;
-  background-color:#A66D00;
+  background-color:#0B5351;
   color:white;
   font:1.05rem 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   border-radius: .5em;
@@ -634,14 +680,14 @@ textarea{
   cursor: pointer;
 }
 .form li input:hover{
-  background-color: white;
-  color:#A66D00;
+  background-color: #A66D00;
+  color:white;
   border-color: white;
 }
 .contactInfo{
   width:35%;
   display:inline-block;
-  margin: 0 0 -3% 0;
+  margin: 4% 0 0 0;
   /* animation:slide 6s infinite; */
   overflow: hidden;
 }
@@ -657,9 +703,9 @@ textarea{
 }
 .contactBox p{
   font-size:1rem;
-  border-bottom: 2px solid #0B5351;
+  border-bottom: 2px solid #A66D00;
   padding:3% 0 5% 0;
-  color:#092327;
+  color:#A66D00
 }
 .contactBox p > a{
   color:#0B5351;
@@ -681,7 +727,7 @@ textarea{
   transform: scale(1.25, 1.25);
 }
 footer{
-  background-color:#F3F6F9;
+  background-color:white;
   color:#A66D00;
   display:flex;
   flex-direction: column;
