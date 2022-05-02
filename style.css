@@ -107,9 +107,7 @@ ul{
   background-position: center;
   background-position: left 10% top 60%;
 }
-/* #bgPhoto{
-  width:60%;
-} */
+
 #mainLogo{
   font-size: 8em;
   color:#F3F6F9;
@@ -855,8 +853,105 @@ footer{
   }
 }
 @media all and (max-width: 1020px) {
+  #mainLogo{
+    font-size: 6em;
+  }
+  #subLogo{
+    display: flex;
+    justify-content: center;
+  }
+  #mainLogo2{
+    font-size: 4em;
+    margin-left:0;
+
+  }
   .about{
+    width:90%;
+  }
+  #history{
     width:100%;
+    padding:0 5%;
+  }
+  iframe{
+    width:90%;
+  }
+  .details{
+    bottom:13em;
+  }
+  .linkOut img{
+    max-width:333px;
+    height:430px; 
+  }
+  #quickLinks{
+    height:56.5em;
+    margin-bottom: -14em;
+  }
+  .detailHeading{
+    font-size: 1.7rem;
+  }
+  .team img{
+    height:28em;
+    width:16em;
+  }
+  .blankBox{
+    height:28em;
+    width:16em;
+  }
+}
+
+@media all and (max-width: 965px) {
+  body{
+    overflow-x:hidden;
+  }
+  #address{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  iframe{
+    width:88%;
+  }
+  .details{
+    bottom:13em;
+  }
+  .linkOut img{
+    max-width:316px;
+    height:430px; 
+  }
+  #quickLinks{
+    height:56.5em;
+    margin-bottom: -14em;
+  }
+  .detailHeading{
+    font-size: 1.7rem;
+  }
+  .team img{
+    height:28em;
+    width:14em;
+  }
+  .blankBox{
+    height:28em;
+    width:14em;
+  }
+  .form{
+    width: 40%;
+    margin: 5% 5% -3% 5%;
+    display: inline-block;
+    background-color: white;
+  }
+  .contactInfo{
+    width:30%;
+    display:inline-block;
+    margin: 4% 0 0 0;
+    /* animation:slide 6s infinite; */
+    overflow: hidden;
+  }
+  #contactHeading{
+    font-size:1.5rem;
+  }
+  #contactSpan{
+    font-size:1.5rem;
   }
 }
 
