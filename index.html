@@ -37,7 +37,8 @@
                 <li class="home"><a class="home" href="#">HOME</a></li>
                 <li class="history moreInfo"><a class="history" href="#history">ABOUT</a></li>
                 <li class="address"><a class="address" href="#address">ADDRESS</a></li>
-                <li class="pricing"><a class="pricing" href="#pricing">PRICING AND RULES</a></li>
+                <li class="pricing"><a class="pricing" href="#pricing">PRICING</a></li>
+                <li class="pricing"><a class="pricing" href="#pricing">RULES</a></li>
                 <li class="committee"><a class="committee" href="#committee">COMMITTEE</a></li>
                 <li class="contact"><a class="contact" href="#contact">CONTACT</a></li>
             </ul>
@@ -96,10 +97,11 @@
             <!-- pricing overlay -->
             <div id="overlayPricing" class="overlay">
                 <div id="modalPricing" class="modal">
+                    <button id="close-pricing-modal">Close</button>
                     <div id="pricingHeading">
                         <h3> Plot Pricing</h3>
-                        <button id="close-pricing-modal">Close</button>
-                        <h2 id="plotPricing">$700 per plot</h2>
+                        <p>The price of an individual plot is $700. <br>To purchase a plot you can contact Mr. Rector at (936)-594-0000.</p>
+                        <!-- <img src="images/DSC_0038.JPG" alt="gravesite photo"> -->
                     </div>
                 </div>
             </div>
@@ -110,6 +112,7 @@
               <!-- Home Page -->
               <section id="home">
                 <!-- <img id="homeLogo" src="cover.png" alt="homepage logo"> -->
+                    <!-- <img id="bgPhoto" src="images/DSC_0054-copy.JPG" alt="homepage"> -->
                     <h1 id="mainLogo">Trinity Community</h1>
                     <div id="subLogo">
                         <h2 id="mainLogo2">Cemetery</h2>
@@ -238,11 +241,11 @@
                 </section>
                 <section id="contact">
                     <div class="row">
+                        <span id="contactSpan">
+                            ---<h5 id="contactHeading">Contact Us</h5>---
+                        </span>
                         <div class="form">
                             <!-- Contact Form -->
-                            <span id="contactSpan">
-                                ---<h5 id="contactHeading">Contact Us</h5>---
-                            </span>
                                 <section>
                                     <form method="post" action="#">
                                         <input type="text" name="name" id="contact-name" placeholder="Name" />
