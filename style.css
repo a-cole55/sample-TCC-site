@@ -37,8 +37,8 @@ ul{
   opacity: 0.9;
 }
 .navMenu{
-  width: 50px;
-  height: 4px;
+  width: 40px;
+  height: 2px;
   background-color:white;
   margin: 3px 0;
 }
@@ -106,6 +106,45 @@ ul{
   background-size:cover;
   background-position: center;
   background-position: left 10% top 60%;
+}
+
+#overlayHome{
+  /* display:none; */
+  position:fixed;
+  top: 0;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.9);
+}
+#close-home-modal{
+  float:right;
+  margin: 1% 1% 0 0;
+  text-transform: uppercase;
+  width:7em;
+  background-color:#0B5351;
+  color:#F3F6F9;
+  height:2em;
+  font-size: 1.25rem;
+  opacity:.92;
+  border-radius: 0.2em;
+  cursor: pointer;
+  text-align: center;
+  padding: 1% 1% 2.3% 1%;
+  /* transition: margin-left .5s; */
+}
+
+#close-home-modal:hover{
+  background-color:#A66D00;
+  color:#F3F6F9;
+}
+#modalHome{
+  position:absolute;
+  top: 0;
+  bottom:0;
+  left:0;
+  right:0;
 }
 
 #mainLogo{
@@ -282,7 +321,7 @@ button:hover{
   display:flex;
   justify-content: center;
   align-items:center;
-  background-color:#A66D00;
+  background-color:#0B5351;
   color:white;
   padding:5%;
   opacity: 0.9;
@@ -299,8 +338,8 @@ button:hover{
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height:61em;
-  margin-bottom: -14em;
+  height:59.5em;
+  margin-bottom: -16em;
 }
 .linkOut{
   display: flex;
@@ -340,28 +379,26 @@ button:hover{
 }
 .details{
   position:relative;
-  bottom:14em;
+  bottom:15em;
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width:100%;
-  background-image: linear-gradient(to bottom, transparent, #A66D00);
+  /* background-image: linear-gradient(to bottom, transparent, #0B5351); */
 }
 .detailHeading{
   color:white;
   font-size: 2rem;
   text-shadow: #A66D00 2px 4px 4px;
   text-align: center;
-  margin:0 0 5% 0;
+  margin:0 0 2% 0;
   text-transform: uppercase;
   letter-spacing: .05em;
   width:100%;
   font-weight: bolder;
 }
 .detailHeading::first-letter{
-  color:#0B5351;
-  /* text-shadow:#092327 2px 4px 4px; */
   font-size:2.5rem;
 }
 .buttons{
@@ -542,6 +579,7 @@ ol, #pricingHeading > p{
 #committee{
   background-color: white;
   box-shadow: #A66D00 2px 2px 5px;
+  height:70em;
 }
 .three{
   display:flex;
@@ -628,10 +666,11 @@ ol, #pricingHeading > p{
   align-items: center;
   color:#F3F6F9;
   box-shadow: #C0BBB7 1px 2px 4px;
+  /* opacity:0.9; */
 }
 /* Row */
 #contact{
-  padding:0 5%;
+  padding:0 5% 5% 5%;
   background-color: white;
 }
 #contactHeading{
@@ -673,12 +712,12 @@ form {
   opacity:0.8;
 }
 form input{
-  width:47%;
+  width:46.9%;
   margin-bottom: 0.5%;
   height:2.5em;
   font-family:'Handlee', sans-serif;
-  border-color:#A66D00;
-  border-width: 2px;
+  border-color:rgb(29, 29, 29);
+  border-width: 1px;
   font-size:1.15rem;
   padding-left: 2%;
 }
@@ -691,10 +730,11 @@ textarea{
   height:10em;
   font-family:'Handlee', sans-serif;
   color:black;
-  border-color:#A66D00;
-  border-width: 2px;
+  border-color:rgb(29, 29, 29);
+  border-width: 1px;
   font-size: 1.15rem;
   margin-bottom:0;
+  padding-left: 2%;
 }
 .form li{
   list-style-type: none;
@@ -727,7 +767,7 @@ textarea{
 .contactBox{
   margin-bottom:5%;
   height:100%;
-  color:#A66D00;
+  color:#0B5351;
 }
 .contactBox h4{
   font-size:1.5rem;
@@ -735,14 +775,18 @@ textarea{
   color: #A66D00;
 }
 .contactBox p{
-  font-size:1rem;
+  font-size:1.2rem;
   border-bottom: 2px solid #A66D00;
   padding:3% 0 5% 0;
-  color:#A66D00
+  color:#0B5351;
+  font-weight: bold;
 }
 .contactBox p > a{
   color:#0B5351;
   font-weight: bold;
+}
+.contactBox p > a:hover{
+  color:#A66D00;
 }
 .contactBox img{
   width: 2.7em;

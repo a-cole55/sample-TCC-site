@@ -112,19 +112,8 @@ document.querySelector("#close-pricing-modal").addEventListener("click", () => {
   overlay1.style.display = "none";
 })
 
-
-// document.querySelector('#menuBG').addEventListener('click', myNav)
-// document.querySelector('#mySidenav').addEventListener('click', close)
-//Nav Bar for Mobile
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-// function myNav() {
-//   var x = document.getElementById("mySidenav");
-//   if (x.style.display === "block") {
-//     x.style.display = "none";
-//   } else {
-//     x.style.display = "block";
-//   }
-// }
-// function close(){
-//   document.getElementById("mySidenav").style.display = "none";
-//   }
+// home modal
+const overlayHome = document.querySelector("#overlayHome");
+document.querySelector("#close-home-modal").addEventListener("click", () => {
+  overlayHome.style.display = "none";
+})
