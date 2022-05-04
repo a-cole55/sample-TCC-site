@@ -114,6 +114,7 @@ document.querySelector("#close-pricing-modal").addEventListener("click", () => {
 
 // home modal
 const overlayHome = document.querySelector("#overlayHome");
-document.querySelector("#close-home-modal").addEventListener("click", () => {
-  overlayHome.style.display = "none";
+document.querySelector("#close-home-modal").addEventListener("mouseover", () => {
+  // overlayHome.style.display = "none";
+  overlayHome.style.width = "0";
 })

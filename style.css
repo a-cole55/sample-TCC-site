@@ -117,6 +117,16 @@ ul{
   right:0;
   z-index: 1;
   background-color: rgba(0,0,0,0.9);
+  /* animation-delay: 4s;
+  animation-name: slideEx;
+  animation-duration: 2s; */
+}
+
+@keyframes slideEx {
+  0%   {width:100%;}
+  25%  {width:75%;}
+  50%  {width: 50%;}
+  100% {width:0%;}
 }
 #close-home-modal{
   float:right;
@@ -138,6 +148,7 @@ ul{
 #close-home-modal:hover{
   background-color:#A66D00;
   color:#F3F6F9;
+
 }
 #modalHome{
   position:absolute;
