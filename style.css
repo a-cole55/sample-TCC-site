@@ -176,9 +176,6 @@ ul{
   80%{opacity: 1;}
   100%{opacity: 0;}
 }
-#mainLogo::first-letter{
-  color:#0B5351;
-}
 #subLogo{
   animation:reveal 6s;
   width:100%;
