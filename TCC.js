@@ -114,7 +114,10 @@ document.querySelector("#close-pricing-modal").addEventListener("click", () => {
 
 // home modal
 const overlayHome = document.querySelector("#overlayHome");
-document.querySelector("#close-home-modal").addEventListener("mouseover", () => {
+document.querySelector("#close-home-modal").addEventListener("click", () => {
   // overlayHome.style.display = "none";
-  overlayHome.style.width = "0";
-})
+  overlayHome.classList.add('fade-out');
+  setTimeout(function(){
+  overlayHome.classList.add('noDisplay')},500);
+});
+
